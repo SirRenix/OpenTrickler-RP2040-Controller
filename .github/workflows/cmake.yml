@@ -1,13 +1,13 @@
-name: Auto Release Build
+name: Auto workflowtest Build
 
 run-name: Build based on ${{ github.ref }} by @${{ github.actor }}
 
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "workflowtest" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "workflowtest" ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
